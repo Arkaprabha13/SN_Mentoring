@@ -21,7 +21,7 @@ import traceback
 # Configure logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
-
+api_key = os.getenv('TOGETHER_API_KEY')
 class DataAnalystAgent:
     def __init__(self, api_key: str):
         """Initialize the Data Analyst Agent with Together AI client."""
